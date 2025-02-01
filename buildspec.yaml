@@ -1,0 +1,13 @@
+version: 0.1
+
+phases:
+  build:
+    commands:
+      - echo Build started on `date`
+      - mvn --quiet install
+  post_build:
+    commands:
+      - echo Build completed!
+artifacts:
+  files:
+    - target/notes-store-data-1.0-SNAPSHOT.jar
