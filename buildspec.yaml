@@ -7,8 +7,8 @@ phases:
       - mvn clean install
   post_build:
     commands:
-      - echo Build completed!
-      - echo "Updating lambda Function..."
+      - echo Build completed!!
+      - echo Updating lambda Function...
       - aws lambda update-function-code --function-name github-to-lambda-demo --zip-file fileb://target/notes-store-data-1.0-SNAPSHOT.jar
       - echo Updated AWS
 artifacts:
