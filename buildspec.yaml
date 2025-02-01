@@ -10,7 +10,7 @@ phases:
       - echo Build completed!
       - echo "Updating lambda Function..."
       - aws lambda update-function-code --function-name github-to-lambda-demo --zip-file fileb://target/notes-store-data-1.0-SNAPSHOT.jar
-      - Updated AWS
+      - echo Updated AWS
 artifacts:
   files:
     - target/notes-store-data-1.0-SNAPSHOT.jar
